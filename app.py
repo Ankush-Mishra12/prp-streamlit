@@ -42,27 +42,27 @@ if not st.session_state.authenticated:
 def load_data():
 
     website_pageviews = pd.read_csv(
-        "streamlit_data/website_pageviews.csv.gz"
+        "website_pageviews.csv.gz"
     )
 
     website_sessions = pd.read_csv(
-        "streamlit_data/website_sessions.csv.gz"
+        "website_sessions.csv.gz"
     )
 
     orders = pd.read_csv(
-        "streamlit_data/orders.csv.gz"
+        "orders.csv.gz"
     )
 
     order_items = pd.read_csv(
-        "streamlit_data/order_items.csv.gz"
+        "order_items.csv.gz"
     )
 
     order_item_refunds = pd.read_csv(
-        "streamlit_data/order_item_refunds.csv.gz"
+        "order_item_refunds.csv.gz"
     )
 
     products = pd.read_csv(
-        "streamlit_data/products.csv.gz"
+        "products.csv.gz"
     )
 
     return (
